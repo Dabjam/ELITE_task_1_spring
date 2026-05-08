@@ -1,0 +1,124 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 28px;
+  padding: 36px;
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    linear-gradient(135deg, #0f172a, #1d4ed8 60%, #22c55e 120%);
+  color: #f8fafc;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.24);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(248, 250, 252, 0.72);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.6rem, 4.8vw, 4.8rem);
+  line-height: 0.92;
+}
+
+.tagline {
+  margin: 0;
+  max-width: 44rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.description {
+  margin: 0;
+  max-width: 48rem;
+  color: rgba(248, 250, 252, 0.86);
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.primaryAction {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.secondaryAction {
+  border: 1px solid rgba(248, 250, 252, 0.32);
+  color: #f8fafc;
+}
+
+.primaryAction:hover,
+.primaryAction:focus-visible,
+.secondaryAction:hover,
+.secondaryAction:focus-visible {
+  transform: translateY(-1px);
+}
+
+.season {
+  margin: 8px 0 0;
+  color: rgba(248, 250, 252, 0.78);
+}
+
+.stats {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.statValue {
+  font-size: 1.8rem;
+}
+
+.statLabel {
+  color: rgba(248, 250, 252, 0.78);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+}
