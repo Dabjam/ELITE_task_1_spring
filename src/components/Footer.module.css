@@ -2,7 +2,7 @@
   display: grid;
   gap: 8px;
   padding: 28px 0 8px;
-  border-top: 1px solid #dbe4f0;
+  border-top: 1px solid rgba(121, 76, 54, 0.18);
 }
 
 .title,
@@ -13,10 +13,10 @@
 .title {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #0f172a;
+  color: #2c1a14;
 }
 
 .note {
-  color: #64748b;
+  color: #6a4b3d;
   line-height: 1.7;
 }

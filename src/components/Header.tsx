@@ -10,7 +10,7 @@ export function Header({ cityName, navigation }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div>
-        <p className={styles.kicker}>Лендинг города</p>
+        <p className={styles.kicker}>Путеводитель по городу</p>
         <h1 className={styles.title}>{cityName}</h1>
       </div>
 

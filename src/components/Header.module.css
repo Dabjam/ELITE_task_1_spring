@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
-  padding: 32px 0 24px;
+  padding: 32px 0 4px;
 }
 
 .kicker {
@@ -11,13 +11,14 @@
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #dbeafe;
+  color: rgba(255, 224, 202, 0.8);
 }
 
 .title {
   margin: 0;
   font-size: clamp(2.3rem, 5vw, 4rem);
   line-height: 0.95;
+  color: #fff7f0;
 }
 
 .navList {
@@ -35,9 +36,9 @@
   align-items: center;
   min-height: 40px;
   padding: 0 14px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 233, 219, 0.22);
   border-radius: 999px;
-  color: #f8fafc;
+  color: #fff4ec;
   text-decoration: none;
   transition:
     transform 0.2s ease,
@@ -48,8 +49,8 @@
 .navLink:hover,
 .navLink:focus-visible {
   transform: translateY(-1px);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 247, 240, 0.08);
+  border-color: rgba(255, 233, 219, 0.48);
 }
 
 @media (max-width: 860px) {

@@ -48,6 +48,8 @@ function App() {
         description={cityData.description}
         bestSeason={cityData.bestSeason}
         stats={cityData.heroStats}
+        imageSrc="/irkutsk-hero.png"
+        imageAlt="Панорамный вид на Иркутск и Ангару"
       />
 
       <section className={styles.section}>
